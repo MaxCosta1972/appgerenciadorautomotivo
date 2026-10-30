@@ -112,7 +112,7 @@
             <div class="flex items-center gap-3">
                 <a href="#comprar" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-gray-950 font-bold px-4 sm:px-6 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 text-sm flex items-center gap-2 transition-all transform hover:scale-[1.02]">
                     <i data-lucide="zap" class="w-4 h-4 fill-current"></i>
-                    <span>Comprar por R$ 19,90</span>
+                    <span>Comprar por R$ 29,90</span>
                 </a>
             </div>
         </div>
@@ -173,7 +173,7 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#comprar" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-400 hover:from-emerald-400 hover:to-teal-300 text-gray-950 text-base font-extrabold rounded-2xl shadow-xl shadow-emerald-500/30 flex items-center justify-center gap-3 transition-all transform hover:-translate-y-0.5">
                             <i data-lucide="download" class="w-5 h-5 stroke-[2.5]"></i>
-                            <span>QUERO BAIXAR AGORA - R$ 19,90</span>
+                            <span>QUERO BAIXAR AGORA - R$ 29,90</span>
                         </a>
                         <a href="#recursos" class="w-full sm:w-auto px-6 py-4 bg-gray-800/80 hover:bg-gray-700/80 text-gray-200 font-semibold rounded-2xl border border-gray-700 flex items-center justify-center gap-2 transition">
                             <i data-lucide="eye" class="w-5 h-5 text-gray-400"></i>
@@ -504,15 +504,15 @@
             <div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
                 <span class="text-cyan-400 font-semibold tracking-wider text-xs uppercase bg-cyan-950/80 px-3.5 py-1.5 rounded-full border border-cyan-500/30 inline-flex items-center gap-1.5 shadow-sm">
                     <i data-lucide="layers" class="w-3.5 h-3.5 text-cyan-400"></i>
-                    <span>Telas Reais do Aplicativo (1 a 8)</span>
+                    <span>Telas Reais do Aplicativo (1 a 9)</span>
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Veja o Aplicativo em Funcionamento Real</h2>
                 <p class="text-gray-400 text-sm max-w-2xl mx-auto">
-                    Conheça a interface completa do Gerenciador Automotivo na sequência exata de uso: desde o acesso com biometria até a localização no mapa do seu mecânico de confiança.
+                    Conheça a interface completa do Gerenciador Automotivo na sequência exata de uso: desde o acesso com biometria até a localização no mapa do seu mecânico de confiança e o Dossiê Veicular completo.
                 </p>
             </div>
 
-            <!-- NAVEGADOR DE ABAS / MINIATURAS (SELEÇÃO RÁPIDA 1 A 8) -->
+            <!-- NAVEGADOR DE ABAS / MINIATURAS (SELEÇÃO RÁPIDA 1 A 9) -->
             <div id="carouselTabsBar" class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar scroll-smooth">
                 <button onclick="irParaSlide(0)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-emerald-500/40 bg-emerald-500/20 text-emerald-300" data-slide="0">
                     1. Login & Biometria
@@ -537,6 +537,9 @@
                 </button>
                 <button onclick="irParaSlide(7)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="7">
                     8. Perfil & Mecânico
+                </button>
+                <button onclick="irParaSlide(8)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="8">
+                    9. Dossiê do Carro
                 </button>
             </div>
 
@@ -605,6 +608,11 @@
                                 <img src="assets/Tela 8.jpg" alt="Tela 8 - Perfil & Mecânico" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='assets/screenshot_1_abastecimento.png';">
                             </div>
 
+                            <!-- SLIDE 9 -->
+                            <div class="carousel-slide w-full h-full absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none" data-index="8">
+                                <img src="assets/Tela 9.jpg" alt="Tela 9 - Dossiê do Carro & Auditoria de Postos" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='assets/screenshot_2_manutencao.png';">
+                            </div>
+
                             <!-- Overlay de Lupa / Zoom no Hover -->
                             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-semibold backdrop-blur-[2px]">
                                 <i data-lucide="zoom-in" class="w-5 h-5 text-emerald-400"></i>
@@ -628,12 +636,12 @@
                     <div class="flex items-center justify-between border-b border-gray-800 pb-4">
                         <div class="flex items-center gap-2">
                             <span id="slideTagBadge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                                Tela 1 de 8
+                                Tela 1 de 9
                             </span>
                             <span id="slideCategory" class="text-xs text-gray-400 font-medium">Segurança & Acesso</span>
                         </div>
                         <div class="text-xs text-gray-500 font-mono font-semibold">
-                            <span id="currentSlideDisplay" class="text-emerald-400 text-sm font-bold">1</span> / 8
+                            <span id="currentSlideDisplay" class="text-emerald-400 text-sm font-bold">1</span> / 9
                         </div>
                     </div>
 
@@ -674,6 +682,7 @@
                             <button onclick="irParaSlide(5)" class="w-2.5 h-2.5 rounded-full transition-all bg-gray-700 hover:bg-gray-500" title="Tela 6"></button>
                             <button onclick="irParaSlide(6)" class="w-2.5 h-2.5 rounded-full transition-all bg-gray-700 hover:bg-gray-500" title="Tela 7"></button>
                             <button onclick="irParaSlide(7)" class="w-2.5 h-2.5 rounded-full transition-all bg-gray-700 hover:bg-gray-500" title="Tela 8"></button>
+                            <button onclick="irParaSlide(8)" class="w-2.5 h-2.5 rounded-full transition-all bg-gray-700 hover:bg-gray-500" title="Tela 9"></button>
                         </div>
 
                         <div class="flex items-center gap-2">
@@ -690,7 +699,7 @@
                     <div class="pt-2">
                         <a href="#comprar" class="w-full py-3.5 px-6 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-gray-950 font-extrabold text-sm rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition transform hover:scale-[1.01]">
                             <i data-lucide="download" class="w-4 h-4"></i>
-                            <span>Gostou? Adquira o App Completo por R$ 19,90</span>
+                            <span>Gostou? Adquira o App Completo por R$ 29,90</span>
                         </a>
                     </div>
 
@@ -1045,10 +1054,10 @@
 
                 <!-- Box de Preço -->
                 <div class="bg-gray-950/80 rounded-2xl p-6 border border-gray-800 text-center mb-8">
-                    <div class="text-gray-400 text-sm line-through mb-1">De R$ 49,90</div>
+                    <div class="text-gray-400 text-sm line-through mb-1">De R$ 59,90</div>
                     <div class="flex items-baseline justify-center gap-2">
                         <span class="text-2xl text-emerald-400 font-bold">R$</span>
-                        <span id="valorDisplay" class="text-5xl sm:text-6xl font-black text-white font-heading">19,90</span>
+                        <span id="valorDisplay" class="text-5xl sm:text-6xl font-black text-white font-heading">29,90</span>
                         <span class="text-gray-400 text-sm font-medium">/ pagamento único</span>
                     </div>
                     <div class="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-500/20">
@@ -1079,7 +1088,7 @@
                     <div class="bg-gray-900/90 rounded-2xl p-6 border border-gray-800 space-y-5">
                         <div class="flex items-center gap-3 border-b border-gray-800 pb-3">
                             <span class="w-7 h-7 rounded-full bg-emerald-500 text-gray-950 font-black text-xs flex items-center justify-center">1</span>
-                            <h3 class="text-base font-bold text-white">Etapa 1: Faça o Pix no Valor de R$ 19,90</h3>
+                            <h3 class="text-base font-bold text-white">Etapa 1: Faça o Pix no Valor de R$ 29,90</h3>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -1311,7 +1320,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
-                        Por ser um software totalmente <b>independente, vitalício e autônomo</b>! Sem mensalidades recorrentes ou taxas de intermediação, você adquire a licença definitiva por uma taxa única de <b>apenas R$ 19,90</b>. Além disso, o aplicativo funciona <b>100% offline</b>: todos os seus dados de abastecimento, médias de consumo, notas e históricos de manutenção mecânica ficam salvos exclusivamente na memória do seu próprio smartphone, com privacidade absoluta e zero rastreamento de dados.
+                        Por ser um software totalmente <b>independente, vitalício e autônomo</b>! Sem mensalidades recorrentes ou taxas de intermediação, você adquire a licença definitiva por uma taxa única de <b>apenas R$ 29,90</b>. Além disso, o aplicativo funciona <b>100% offline</b>: todos os seus dados de abastecimento, médias de consumo, notas e históricos de manutenção mecânica ficam salvos exclusivamente na memória do seu próprio smartphone, com privacidade absoluta e zero rastreamento de dados.
                     </p>
                 </details>
 
@@ -1361,7 +1370,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <p class="text-gray-400 text-xs sm:text-sm mt-3 leading-relaxed">
-                        Não! O valor de R$ 19,90 é pagamento único. Você paga uma única vez e o aplicativo é seu para sempre, sem nenhuma cobrança recorrente no seu cartão ou banco.
+                        Não! O valor de R$ 29,90 é pagamento único. Você paga uma única vez e o aplicativo é seu para sempre, sem nenhuma cobrança recorrente no seu cartão ou banco.
                     </p>
                 </details>
 
@@ -1462,7 +1471,7 @@
             chavePix: "isagabimaxbeta@gmail.com",
             nomeBeneficiario: "MARCIO GUIMARAES COSTA",
             cidade: "RIO DE JANEIRO",
-            valor: "19.90",
+            valor: "29.90",
             whatsapp: "5521999893885"
         };
 
@@ -1503,7 +1512,7 @@
             const cleanKey = chave.trim();
             const cleanName = (nome || "CONTROLE AUTO").normalize("NFD").replace(/[\u0300-\u036f]/g, "").substring(0, 25).toUpperCase();
             const cleanCity = (cidade || "SAO PAULO").normalize("NFD").replace(/[\u0300-\u036f]/g, "").substring(0, 15).toUpperCase();
-            const cleanValor = parseFloat(valor || "19.90").toFixed(2);
+            const cleanValor = parseFloat(valor || "29.90").toFixed(2);
 
             let payload = "";
             payload += formatField("00", "01"); // Payload Format Indicator
@@ -1584,7 +1593,7 @@
         }
 
         function copiarInstrucoesInstalacao() {
-            const texto = `📲 PASSO A PASSO PARA INSTALAR O GERENCIADOR AUTOMOTIVO NO SEU ANDROID:\n\n1. Toque em 'Baixar Aplicativo (.APK)' para salvar o arquivo de 16 MB no seu celular.\n2. Se o navegador avisar 'O arquivo pode ser nocivo', toque em 'Fazer o download mesmo assim' (é um aviso padrão preventivo do Google para arquivos fora da loja).\n3. Ao abrir o arquivo baixado, se pedir autorização, toque em 'Configurações' e ative 'Permitir desta fonte'.\n4. Toque em 'Instalar' e depois em 'Abrir'.\n5. Copie o Código do seu Aparelho (ex: DEV-XXXX) exibido na tela inicial do app.\n6. Envie o código junto com o comprovante do Pix de R$ 19,90 no WhatsApp do Márcio para receber sua Chave de Ativação Vitalícia!`;
+            const texto = `📲 PASSO A PASSO PARA INSTALAR O GERENCIADOR AUTOMOTIVO NO SEU ANDROID:\n\n1. Toque em 'Baixar Aplicativo (.APK)' para salvar o arquivo de 16 MB no seu celular.\n2. Se o navegador avisar 'O arquivo pode ser nocivo', toque em 'Fazer o download mesmo assim' (é um aviso padrão preventivo do Google para arquivos fora da loja).\n3. Ao abrir o arquivo baixado, se pedir autorização, toque em 'Configurações' e ative 'Permitir desta fonte'.\n4. Toque em 'Instalar' e depois em 'Abrir'.\n5. Copie o Código do seu Aparelho (ex: DEV-XXXX) exibido na tela inicial do app.\n6. Envie o código junto com o comprovante do Pix de R$ 29,90 no WhatsApp do Márcio para receber sua Chave de Ativação Vitalícia!`;
 
             navigator.clipboard.writeText(texto).then(() => {
                 alert("Instruções copiadas com sucesso! Você pode colar no WhatsApp ou no seu bloco de notas.");
@@ -1631,11 +1640,11 @@
             document.getElementById("modalTermos").classList.add("hidden");
         }
 
-        // Dados Completos das 8 Telas do Aplicativo na Sequência Exata
+        // Dados Completos das 9 Telas do Aplicativo na Sequência Exata
         const TELAS_APP = [
             {
                 numero: 1,
-                tag: "Tela 1 de 8",
+                tag: "Tela 1 de 9",
                 categoria: "Segurança & Acesso",
                 titulo: "Login Seguro & Biometria em 1 Toque",
                 descricao: "Faça login com e-mail e senha ou use o sensor biométrico (impressão digital) para acesso rápido. Seus dados de combustível e histórico mecânico ficam 100% protegidos e confidenciais no seu smartphone.",
@@ -1648,7 +1657,7 @@
             },
             {
                 numero: 2,
-                tag: "Tela 2 de 8",
+                tag: "Tela 2 de 9",
                 categoria: "Painel do Motorista",
                 titulo: "Dashboard de Desempenho & Autonomia",
                 descricao: "Visão geral completa do seu veículo (ex: Volkswagen T-Cross 2021 • Placa LRK8231), indicador de autonomia média restante de 32.375 km até a próxima revisão, alertas ativos e atalhos rápidos de serviços.",
@@ -1661,7 +1670,7 @@
             },
             {
                 numero: 3,
-                tag: "Tela 3 de 8",
+                tag: "Tela 3 de 9",
                 categoria: "Gráficos de Desgaste",
                 titulo: "Métricas de Autonomia & Peças Restantes",
                 descricao: "Gráficos intuitivos comparando os quilômetros rodados com a autonomia restante para componentes vitais como Correia do Ar e Correia da Direção. O sistema confirma se todas as peças estão dentro da margem segura de uso.",
@@ -1674,7 +1683,7 @@
             },
             {
                 numero: 4,
-                tag: "Tela 4 de 8",
+                tag: "Tela 4 de 9",
                 categoria: "Saúde do Veículo",
                 titulo: "Relatório de Serviços & Troca de Peças",
                 descricao: "Monitore o desgaste de cada peça e equipamento do seu carro. Acompanhe a data do serviço, percentual de desgaste, limites de quilometragem (ex: 160.000 km) e conclua ou adicione novas manutenções facilmente.",
@@ -1687,7 +1696,7 @@
             },
             {
                 numero: 5,
-                tag: "Tela 5 de 8",
+                tag: "Tela 5 de 9",
                 categoria: "Análise Detalhada",
                 titulo: "Medidor Circular & Estimativa de Troca",
                 descricao: "Modal de diagnóstico detalhado com medidor circular de desgaste estimado (ex: 0% de uso), autonomia restante segura de 40.000 km, data da última troca, intervalo recomendado e quilometragem prevista para a próxima substituição.",
@@ -1700,7 +1709,7 @@
             },
             {
                 numero: 6,
-                tag: "Tela 6 de 8",
+                tag: "Tela 6 de 9",
                 categoria: "Linha do Tempo",
                 titulo: "Histórico Cronológico Completo do Veículo",
                 descricao: "Linha do tempo interativa e contínua conectando todo o ciclo do carro: desde a instalação anterior estimada no passado, as revisões concluídas com sucesso, o odômetro atual reportado hoje e a próxima revisão prevista no futuro.",
@@ -1713,7 +1722,7 @@
             },
             {
                 numero: 7,
-                tag: "Tela 7 de 8",
+                tag: "Tela 7 de 9",
                 categoria: "Gestão Multiveículos",
                 titulo: "Busca Instantânea de Carro por Placa",
                 descricao: "Localize qualquer veículo cadastrado em poucos segundos digitando a placa (ex: LRK8231). Permite gerenciar carros de toda a família, motos de entrega ou frotas de empresas com agilidade máxima.",
@@ -1726,7 +1735,7 @@
             },
             {
                 numero: 8,
-                tag: "Tela 8 de 8",
+                tag: "Tela 8 de 9",
                 categoria: "Perfil & Mecânico",
                 titulo: "Perfil do Condutor, Mapa & WhatsApp do Mecânico",
                 descricao: "Central completa do proprietário (Márcio Costa), dados do Volkswagen T-Cross 2021, localização no mapa da oficina (Av. Geremário Dantas 626) e botões diretos para chamar no WhatsApp ou ligar para o mecânico de confiança.",
@@ -1735,6 +1744,19 @@
                     "Endereço e mapa integrado do mecânico de confiança",
                     "Botão direto 'WhatsApp com o Mecânico'",
                     "Botão de discagem rápida 'Ligar para o Mecânico'"
+                ]
+            },
+            {
+                numero: 9,
+                tag: "Tela 9 de 9",
+                categoria: "Dossiê & Auditoria",
+                titulo: "Dossiê do Carro & Auditoria de Postos",
+                descricao: "Laudo técnico oficial com placa Mercosul, score de saúde veicular, histórico minucioso de revisões das peças, auditoria de rendimento (km/L) por posto de combustível e exportação para PDF executivo A4 ou envio direto no WhatsApp.",
+                imagem: "assets/Tela 9.jpg",
+                destaques: [
+                    "Laudo técnico com placa Mercosul e índice de saúde veicular",
+                    "Auditoria de postos e km/L para combater combustível adulterado",
+                    "Exportação em PDF A4 oficial e compartilhamento no WhatsApp"
                 ]
             }
         ];
