@@ -77,6 +77,16 @@
         .glass-card:hover {
             border-color: rgba(16, 185, 129, 0.3);
         }
+        /* Oculta scrollbar em navegadores WebKit, Firefox e IE/Edge */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none !important; /* IE e Edge */
+            scrollbar-width: none !important; /* Firefox */
+        }
     </style>
 </head>
 <body class="bg-[#0B0F19] text-gray-100 antialiased min-h-screen relative overflow-x-hidden">
@@ -513,33 +523,33 @@
             </div>
 
             <!-- NAVEGADOR DE ABAS / MINIATURAS (SELEÇÃO RÁPIDA 1 A 9) -->
-            <div id="carouselTabsBar" class="flex items-center justify-start md:justify-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar scroll-smooth">
-                <button onclick="irParaSlide(0)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-emerald-500/40 bg-emerald-500/20 text-emerald-300" data-slide="0">
-                    1. Login & Biometria
+            <div id="carouselTabsBar" class="flex items-center justify-start lg:justify-center gap-1.5 sm:gap-2 overflow-x-auto py-1.5 mb-8 no-scrollbar scroll-smooth">
+                <button onclick="irParaSlide(0)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-emerald-500/40 bg-emerald-500/20 text-emerald-300" data-slide="0">
+                    1. Login
                 </button>
-                <button onclick="irParaSlide(1)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="1">
-                    2. Painel Principal
+                <button onclick="irParaSlide(1)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="1">
+                    2. Painel
                 </button>
-                <button onclick="irParaSlide(2)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="2">
-                    3. Autonomia & Gráficos
+                <button onclick="irParaSlide(2)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="2">
+                    3. Autonomia
                 </button>
-                <button onclick="irParaSlide(3)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="3">
-                    4. Saúde do Veículo
+                <button onclick="irParaSlide(3)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="3">
+                    4. Saúde
                 </button>
-                <button onclick="irParaSlide(4)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="4">
-                    5. Métrica Detalhada
+                <button onclick="irParaSlide(4)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="4">
+                    5. Desgaste
                 </button>
-                <button onclick="irParaSlide(5)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="5">
-                    6. Linha do Tempo
+                <button onclick="irParaSlide(5)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="5">
+                    6. Histórico
                 </button>
-                <button onclick="irParaSlide(6)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="6">
-                    7. Buscar Carro
+                <button onclick="irParaSlide(6)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="6">
+                    7. Placas
                 </button>
-                <button onclick="irParaSlide(7)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="7">
-                    8. Perfil & Mecânico
+                <button onclick="irParaSlide(7)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="7">
+                    8. Mecânico
                 </button>
-                <button onclick="irParaSlide(8)" class="tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="8">
-                    9. Dossiê do Carro
+                <button onclick="irParaSlide(8)" class="tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200" data-slide="8">
+                    9. Dossiê
                 </button>
             </div>
 
@@ -1795,7 +1805,7 @@
             const tabsBar = document.getElementById("carouselTabsBar");
             document.querySelectorAll(".tab-btn").forEach((btn, idx) => {
                 if (idx === currentSlideIndex) {
-                    btn.className = "tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-emerald-500/40 bg-emerald-500/20 text-emerald-300";
+                    btn.className = "tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-emerald-500/40 bg-emerald-500/20 text-emerald-300";
                     if (tabsBar) {
                         const btnLeft = btn.offsetLeft;
                         const btnWidth = btn.offsetWidth;
@@ -1806,7 +1816,7 @@
                         });
                     }
                 } else {
-                    btn.className = "tab-btn px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200";
+                    btn.className = "tab-btn px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border border-gray-800 bg-gray-900/80 text-gray-400 hover:text-gray-200";
                 }
             });
 
